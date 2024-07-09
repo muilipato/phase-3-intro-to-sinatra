@@ -3,6 +3,10 @@ require 'sinatra'
 class App < Sinatra::Base
   set :default_content_type, 'application/json'
 
+  get '/' do
+    '<h1>Homepage<h1>'
+  end
+
   get '/hello' do
     '<h2>Hello <em>World</em>!</h2>'
   end
